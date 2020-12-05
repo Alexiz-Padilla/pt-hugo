@@ -21,6 +21,7 @@ const NavbarPage = () => (
             <Nav className="mr-auto">
                 <Link to="counter" className="nav-link">Counter</Link>
                 <Link to="temperature" className="nav-link">Temperature</Link>
+                <Link to="flight" className="nav-link">Flight</Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
