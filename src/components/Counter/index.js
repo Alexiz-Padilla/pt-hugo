@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import styled from 'styled-components'
 import Window from '../Window'
 import {Form, Button, Row, Col} from 'react-bootstrap'
 import { setCounterAction } from '../../action/counterAction'
-
+import { withRouter, Link } from 'react-router-dom';
 const Input = ({...props}) => (
     <Form.Control type="text" value={props.currentCount} onChange={(val)=> props.newStart(val)}></Form.Control>
 )
@@ -38,7 +37,7 @@ class Counter extends Component {
     })
   }
 
-  handlerInput = (val) => {
+  handleInput = (val) => {
     this.setState({
         counter: parseInt(val.target.value) || 0
     })
@@ -46,16 +45,10 @@ class Counter extends Component {
   render() {
     const { counter } = this.state;
     return (
-      <Wrapper>
-          <Window title={"Counter"} Component={<CounterForm count={(e)=> this.handlerCount(e)} currentCount={counter} newStart={(val)=> this.handlerInput(val)}/> }></Window>
-      </Wrapper>
+        <Window title={"Counter"} Component={<CounterForm count={(e)=> this.handlerCount(e)} currentCount={counter} newStart={(val)=> this.handleInput(val)}/> }></Window>
     )
   }
 }
-
-const Wrapper = styled.div`
-
-`
 
 const mapStateToProps = (state, ownProps) => ({
     counter: state.CounterReducer.count
@@ -67,5 +60,5 @@ const mapDispatchToProps = dispatch => ({
     } 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter)
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Counter))
 
