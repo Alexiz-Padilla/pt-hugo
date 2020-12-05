@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 
@@ -20,6 +20,7 @@ const NavbarPage = () => (
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
                 <Link to="counter" className="nav-link">Counter</Link>
+                <Link to="temperature" className="nav-link">Temperature</Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
