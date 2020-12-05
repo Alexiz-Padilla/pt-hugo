@@ -22,6 +22,7 @@ const NavbarPage = () => (
                 <Link to="counter" className="nav-link">Counter</Link>
                 <Link to="temperature" className="nav-link">Temperature</Link>
                 <Link to="flight" className="nav-link">Flight</Link>
+                <Link to="timer" className="nav-link">Timer</Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
