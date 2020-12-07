@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Window from '../Window'
 import {Form, Button, Row, Col} from 'react-bootstrap'
 import { setCounterAction } from '../../action/counterAction'
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 const Input = ({...props}) => (
     <Form.Control type="text" value={props.currentCount} onChange={(val)=> props.newStart(val)}></Form.Control>
 )

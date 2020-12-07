@@ -1,7 +1,6 @@
 import React from 'react'
 import { Switch, Route,   BrowserRouter as Router,
 } from 'react-router-dom'
-import styled from 'styled-components'
 import NavigationBar from './components/Navbar'
 import HomePageContainer from './components/home'
 import CounterContainer from './components/Counter'

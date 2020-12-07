@@ -124,7 +124,7 @@ class Flight extends Component {
     }
     handleTypeFlight = (val) => {
         const valCurated = val.target.value
-        if (valCurated == 2) {
+        if (valCurated === 2) {
             this.setState({
                 isFlightReturnDisabled: false
             });

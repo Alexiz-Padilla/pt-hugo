@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import styled from 'styled-components';
 
 const Window = ({title, Component}) => (
     <Row className="justify-content-md-center mt-5">
@@ -15,7 +14,4 @@ const Window = ({title, Component}) => (
     </Row>
 );
 
-const Wrapper = styled.div`
-
-`
 export default Window;
