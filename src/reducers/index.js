@@ -4,8 +4,10 @@ import CounterReducer from './CounterReducer';
 import TemperatureReducer from './TemperatureReducer';
 import FlightReducer from './FlightReducer';
 import CrudReducer from "./CrudReducer";
+import CircleReducer from "./CirclesReducer";
 
 const createRootReducer = history => combineReducers({
+    CircleReducer,
     CounterReducer,
     TemperatureReducer,
     FlightReducer,

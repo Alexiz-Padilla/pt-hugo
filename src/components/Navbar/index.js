@@ -23,6 +23,7 @@ const NavbarPage = () => (
                 <Link to="flight" className="nav-link">Flight</Link>
                 <Link to="timer" className="nav-link">Timer</Link>
                 <Link to="crud" className="nav-link">CRUD</Link>
+                <Link to="circles" className="nav-link">Circles</Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
