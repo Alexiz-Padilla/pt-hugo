@@ -7,4 +7,4 @@ Prueba técnica para Hugo
 ```npm install```
 
 2) Iniciar el proyecto ejecutando el siguiente comando
-````npm start```
+```npm start```
