@@ -10,18 +10,18 @@ const NavbarPage = () => (
                     src="assets/img/logo.png"
                     width="100"
                     height="65"
-                    className="d-inline-block align-top"
+                    className="d-inline-block align-top mb-1"
                     alt="Hugo"
-                    className="mb-1"
                 />
             </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse>
             <Nav className="mr-auto">
                 <Link to="counter" className="nav-link">Counter</Link>
                 <Link to="temperature" className="nav-link">Temperature</Link>
                 <Link to="flight" className="nav-link">Flight</Link>
+                <Link to="timer" className="nav-link">Timer</Link>
                 <Link to="crud" className="nav-link">CRUD</Link>
             </Nav>
         </Navbar.Collapse>
